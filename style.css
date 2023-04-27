@@ -1,6 +1,237 @@
 :root {
-  --primary-color: #005acd;
-  --secondary-color: #ae006c;
+  --primary-color: rgb(0, 90, 205);
+  --secondary-color: rgb(174, 0, 108);
   --lt-blue: #dce8f1;
-  --lt-pink: #f89ae5;
+  --lt-pink: rgb(252, 197, 241);
+  --heading-font: "mina", serif;
+  --body-font: "bookmania", serif;
+  --button-hover-transiton: all 200ms ease-in-out;
+  --button-border-radius: 30px;
+  --box-shadow: 10px 10px 20px rgba(109, 108, 109, 0.3);
+}
+
+body {
+  font-family: var(--body-font);
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h5,
+h6 {
+  font-family: var(--heading-font);
+}
+
+h1 {
+  font-size: 96px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 72px;
+  line-height: 72px;
+  padding-top: 50px;
+  margin-top: 0;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+h4 {
+  font-family: var(--body-font);
+  text-align: center;
+  font-size: 24px;
+  line-height: 24px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+header {
+  display: flex;
+  margin: 0 auto;
+  background-image: linear-gradient(
+      rgba(174, 0, 108, 0.3),
+      rgba(0, 90, 205, 0.7)
+    ),
+    url("./images/Oia_Santorini_path.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  color: white;
+  text-decoration: none;
+  padding: 8px 20px;
+  border: none;
+  border-radius: var(--button-border-radius);
+  transition: var(--button-hover-transiton);
+  box-shadow: var(--box-shadow);
+  font-size: 18px;
+  font-family: var(--body-font);
+}
+
+.hero {
+  color: white;
+}
+.hero h1 {
+  line-height: 60px;
+  font-size: 160px;
+  display: inline;
+}
+
+.hero h3 {
+  font-family: var(--body-font);
+  font-size: 36px;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.arrow-down .fa-arrow-down {
+  font-size: 48px;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+}
+
+.fa-arrow-down a {
+  color: white;
+}
+
+.cards-header {
+  color: var(--secondary-color) !important;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 10px;
+}
+
+.grid-cards {
+  margin: 0 100px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+.grid-social {
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+}
+
+.card {
+  background: white;
+  margin: 0 0 30px;
+  box-shadow: var(--box-shadow);
+  position: relative;
+}
+
+.card-image {
+  max-width: 100%;
+  display: block;
+}
+
+.card-title {
+  padding: 20px 20px 10px;
+}
+
+.card-body {
+  padding: 10px 30px;
+}
+
+.card-body button {
+  margin-bottom: 20px;
+}
+
+.card button {
+  background: var(--secondary-color);
+  font-weight: 800;
+}
+
+.card button:hover {
+  background: var(--primary-color);
+}
+
+.card a {
+  color: white;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.plan-visit,
+.hotels,
+.eating-out,
+.explore {
+  padding-bottom: 50px;
+}
+.hotels,
+.explore {
+  background-color: var(--lt-blue);
+}
+
+.location a {
+  color: var(--secondary-color);
+}
+
+.location a:hover {
+  color: var(--primary-color);
+}
+
+.social a {
+  color: black;
+  font-size: 24px;
+}
+
+.social a:hover {
+  color: var(--secondary-color);
+  font-size: 24px;
+}
+
+.fixed-img-flowers {
+  background-attachment: fixed;
+  background-image: url("./images/santorini-pinkflowers.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+}
+.fixed-img-evening {
+  background-attachment: fixed;
+  background-image: url("./images/hillside.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+}
+.fixed-img-village {
+  background-attachment: fixed;
+  background-image: url("./images/village.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+}
+.fixed-img-dining {
+  background-attachment: fixed;
+  background-image: url("./images/dining.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
 }
