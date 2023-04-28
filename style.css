@@ -68,7 +68,7 @@ header {
 button {
   color: white;
   text-decoration: none;
-  padding: 8px 20px;
+  padding: 8px 20px 6px;
   border: none;
   border-radius: var(--button-border-radius);
   transition: var(--button-hover-transiton);
@@ -162,13 +162,10 @@ button {
   padding: 10px 30px;
 }
 
-.card-body button {
-  margin-bottom: 20px;
-}
-
 .card button {
   background: var(--secondary-color);
   font-weight: 800;
+  margin-bottom: 20px;
 }
 
 .card button:hover {
