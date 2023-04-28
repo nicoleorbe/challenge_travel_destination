@@ -43,9 +43,9 @@ h4 {
   font-family: var(--body-font);
   text-align: center;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 26px;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 header {
@@ -123,6 +123,11 @@ button {
   grid-gap: 50px;
 }
 
+.grid-footer {
+  margin: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .card {
   background: white;
   margin: 0 0 30px;
@@ -137,6 +142,20 @@ button {
 
 .card-title {
   padding: 20px 20px 10px;
+  text-align: center;
+}
+
+.card-title p {
+  display: inline;
+  font-family: var(--body-font);
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: white;
+  background: var(--primary-color);
+  border-radius: 20px;
+  padding: 6px 10px 3px;
+  vertical-align: middle;
 }
 
 .card-body {
@@ -165,7 +184,8 @@ button {
 .plan-visit,
 .hotels,
 .eating-out,
-.explore {
+.explore,
+.beach {
   padding-bottom: 50px;
 }
 .hotels,
@@ -234,4 +254,142 @@ button {
   height: 500px;
   justify-content: center;
   align-items: center;
+}
+
+footer {
+  color: white;
+  background-attachment: fixed;
+  background-image: linear-gradient(
+      rgba(0, 90, 205, 0.7),
+      rgba(174, 0, 108, 0.3)
+    ),
+    url("./images/pool.jpg");
+
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  padding: 50px;
+}
+
+footer .grid {
+  grid-gap: 30px;
+}
+
+footer h3 {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+footer p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: var(--secondary-color);
+}
+
+.playlist {
+  padding: 0 50px;
+}
+.site-info {
+  color: white;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.site-info a {
+  color: var(--red);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.site-info a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+@media (max-width: 1200px) {
+  .hero h1 {
+    font-size: 128px;
+  }
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    text-align: center !important;
+  }
+
+  .grid-footer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card-footer {
+    margin: 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero h1 {
+    font-size: 96px;
+  }
+  .hero h3 {
+    font-size: 24px;
+  }
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    text-align: center !important;
+    margin: 0 30px;
+  }
+  .char-name {
+    font-size: 30px;
+  }
+
+  .hero h1 {
+    font-size: 72px;
+  }
+
+  .hero h3 {
+    font-size: 18px;
+  }
+
+  footer {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
