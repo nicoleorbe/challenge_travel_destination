@@ -55,7 +55,7 @@ header {
       rgba(174, 0, 108, 0.3),
       rgba(0, 90, 205, 0.7)
     ),
-    url("./images/Oia_Santorini_path.jpg");
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/079/374/original/Oia_Santorini_path.jpg?1682737620");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -140,6 +140,10 @@ button {
   display: block;
 }
 
+.card-image:hover {
+  filter: saturate(200%);
+}
+
 .card-title {
   padding: 20px 20px 10px;
   text-align: center;
@@ -210,7 +214,7 @@ button {
 
 .fixed-img-flowers {
   background-attachment: fixed;
-  background-image: url("./images/santorini-pinkflowers.png");
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/079/379/original/santorini-pinkflowers.png?1682737658");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -221,7 +225,7 @@ button {
 }
 .fixed-img-evening {
   background-attachment: fixed;
-  background-image: url("./images/hillside.png");
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/079/368/original/hillside.png?1682737576");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -232,7 +236,7 @@ button {
 }
 .fixed-img-village {
   background-attachment: fixed;
-  background-image: url("./images/village.png");
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/079/382/original/village.png?1682737740");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -243,7 +247,7 @@ button {
 }
 .fixed-img-dining {
   background-attachment: fixed;
-  background-image: url("./images/dining.jpg");
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/079/389/original/dining.png?1682738265");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -260,7 +264,7 @@ footer {
       rgba(0, 90, 205, 0.7),
       rgba(174, 0, 108, 0.3)
     ),
-    url("./images/pool.jpg");
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/079/376/original/pool.jpg?1682737632");
 
   background-repeat: no-repeat;
   background-position: top;
